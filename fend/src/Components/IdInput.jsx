@@ -35,7 +35,7 @@ const IdInput = () => {
             type="text"
             id="Aid"
             name="Aid"
-            onChange={(e) => setAssesmentId(e.target.value)}
+            onChange={(e) => setAssesmentId(e.target.value)} 
           />
           <label htmlFor="id">Enter Vector Id</label>
           <input
