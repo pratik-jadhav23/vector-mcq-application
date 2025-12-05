@@ -6,5 +6,5 @@ const router = new express.Router()
 router.post('/add',addAssesment)
 router.post('/get',getAssesment)
 router.post('/evaluate', evaluate)
-
+ 
 module.exports = router

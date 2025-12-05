@@ -2,8 +2,10 @@ const express = require('express')
 const mongoose = require('mongoose')
 const router = require('./routes/routes')
 const cors = require("cors")
+const dotenv = require('dotenv')   
+dotenv.config()
 
-mongoose.connect('mongodb://localhost:27017/mcqdb').then(()=>{
+mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log('mongoDb connected')
 }).catch((err)=>{
     console.log(err.message)
